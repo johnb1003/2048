@@ -98,7 +98,7 @@ class GameBoard {
 
     moveLeft() {
         if(this.frozen) {
-            console.log("FROZEN");
+            //console.log("FROZEN");
             return;
         }
         let shifted = this.shiftLeft();
@@ -116,7 +116,7 @@ class GameBoard {
         }
 
         if(this.nullList.length === 0 && this.checkLoss()) {
-            console.log("You lose!");
+            //console.log("You lose!");
             sleep(LOSE_DELAY).then(() => {
                 this.lose();
             });
@@ -125,7 +125,7 @@ class GameBoard {
 
     moveUp() {
         if(this.frozen) {
-            console.log("FROZEN");
+            //console.log("FROZEN");
             return;
         }
         let shifted = this.shiftUp();
@@ -143,7 +143,7 @@ class GameBoard {
         }
 
         if(this.nullList.length === 0 && this.checkLoss()) {
-            console.log("You lose!");
+            //console.log("You lose!");
             sleep(LOSE_DELAY).then(() => {
                 this.lose();
             });
@@ -152,7 +152,7 @@ class GameBoard {
 
     moveRight() {
         if(this.frozen) {
-            console.log("FROZEN");
+            //console.log("FROZEN");
             return;
         }
         let shifted = this.shiftRight();
@@ -170,7 +170,7 @@ class GameBoard {
         }
 
         if(this.nullList.length === 0 && this.checkLoss()) {
-            console.log("You lose!");
+            //console.log("You lose!");
             sleep(LOSE_DELAY).then(() => {
                 this.lose();
             });
@@ -179,7 +179,7 @@ class GameBoard {
 
     moveDown() {
         if(this.frozen) {
-            console.log("FROZEN");
+            //console.log("FROZEN");
             return;
         }
         let shifted = this.shiftDown();
@@ -197,7 +197,7 @@ class GameBoard {
         }
 
         if(this.nullList.length === 0 && this.checkLoss()) {
-            console.log("You lose!");
+            //console.log("You lose!");
             sleep(LOSE_DELAY).then(() => {
                 this.lose();
             });
